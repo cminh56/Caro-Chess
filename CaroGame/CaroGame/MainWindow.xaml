@@ -1,14 +1,14 @@
 ﻿<Window x:Class="CaroGame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Cờ Caro" Height="500" Width="600">
+        Title="Cờ Caro" Height="600" Width="600">
     <Grid>
+        <!-- Khung nhập kích thước và nút bắt đầu -->
         <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">
             <TextBlock Text="Nhập kích thước bàn cờ:" FontSize="16" Margin="0,10,0,5" />
             <TextBox Name="BoardSizeInput" Width="100" Height="30" Text="5" HorizontalAlignment="Center" />
             <Button Name="StartButton" Content="Bắt Đầu Chơi" Width="120" Height="40" Click="StartButton_Click" />
         </StackPanel>
 
-        <UniformGrid Name="GameBoard" Visibility="Collapsed" />
     </Grid>
 </Window>
