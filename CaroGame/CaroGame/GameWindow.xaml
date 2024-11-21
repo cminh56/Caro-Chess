@@ -1,9 +1,12 @@
 ﻿<Window x:Class="CaroGame.GameWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Chơi Cờ Caro" Height="600" Width="600">
+        Title="Cờ Caro" Height="450" Width="800"
+        ResizeMode="CanResizeWithGrip">
     <Grid>
-        <!-- Bàn cờ -->
-        <UniformGrid Name="GameBoard" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <!-- GameBoard sẽ chiếm toàn bộ diện tích của cửa sổ -->
+        <Grid x:Name="GameBoard" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <!-- Các ô cờ sẽ được tạo động ở đây -->
+        </Grid>
     </Grid>
 </Window>
